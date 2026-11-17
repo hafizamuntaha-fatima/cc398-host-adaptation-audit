@@ -30,12 +30,24 @@ jobs:
 
       - name: Execute source-audited notebook
         run: |
-          mkdir -p notebook-executions
-          jupyter nbconvert --to notebook --execute \
-            notebooks/CC398_Host_Associated_Genomic_Variation_Source_Audited.ipynb \
-            --ExecutePreprocessor.timeout=300 \
-            --output CC398_Executed.ipynb \
-            --output-dir notebook-executions
+          python - <<'PY'
+          import nbformat
+          from nbclient import NotebookClient
+          from pathlib import Path
+
+          source = Path("notebooks/CC398_Host_Associated_Genomic_Variation_Source_Audited.ipynb")
+          notebook = nbformat.read(source, as_version=4)
+          client = NotebookClient(
+              notebook,
+              timeout=300,
+              kernel_name="python3",
+              resources={"metadata": {"path": str(Path.cwd())}},
+          )
+          client.execute()
+          output = Path("notebook-executions/CC398_Executed.ipynb")
+          output.parent.mkdir(parents=True, exist_ok=True)
+          nbformat.write(notebook, output)
+          PY
 
       - name: Verify observed results and source checksums
         run: python scripts/verify_results.py
