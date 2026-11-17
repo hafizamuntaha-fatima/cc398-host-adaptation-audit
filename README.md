@@ -31,10 +31,10 @@ The figures use consistent dark-blue livestock-associated (LA) and orange human-
 | [Source manifest](results/input_manifest.csv) | Official source URLs, hashes and source sizes |
 | [Cohort audit](results/cohort_audit.csv) | Three source tables, 1,180 IDs successfully matched |
 | [ID correction log](results/isolate_id_reconciliation.csv) | Two zero-padding mismatches resolved |
-| [Mobile elements](results/mge_prevalence.csv) | Tn916, SCCmec and the File 3 \`Sa3\` annotation |
+| [Mobile elements](results/mge_prevalence.csv) | Tn916, SCCmec and the File 3 `Sa3` annotation |
 | [Genes](results/gene_prevalence.csv) | Eight selected resistance and immune-evasion gene annotations |
 | [Unadjusted Fisher tests](results/gene_fisher_unadjusted.csv) | Two-sided pooled isolate-level descriptive tests |
-| [Annotation concordance](results/source_gene_concordance.csv) | Cross-file overlap and five \`mecA\` disagreements |
+| [Annotation concordance](results/source_gene_concordance.csv) | Cross-file overlap and five `mecA` disagreements |
 | [Individual discordant calls](results/source_gene_disagreements.csv) | Isolate-level details |
 | [Sa3 interpretation](results/sa3_annotation_vs_article.csv) | Field annotation vs. the manuscript's prophage count |
 | [Accession gaps](results/accession_gaps.csv) | Six missing isolate-specific accession fields |
@@ -43,6 +43,6 @@ The figures use consistent dark-blue livestock-associated (LA) and orange human-
 
 **Study population.** The reconciled source annotations comprise 1,180 isolates, including 704 LA and 476 HA clade assignments. Two strain names have inconsistent leading zeros across tables. The earlier 1,178-isolate analysis is retained separately as a historical comparison and should not be mistaken for the corrected full-cohort figures.
 
-**Important interpretation boundaries.** The annotation \`Sa3=1\` occurs in 109/704 LA isolates, while the paper reports 68/704 carrying a φSa3 prophage. These measures should not be treated as identical until the underlying definition is established. Five \`mecA\` calls differ between Supplementary Files 3 and 7; the figure uses the declared File 3 source. The pooled Fisher p-values are **not phylogeny-adjusted** and do not independently establish host adaptation. The original publication's 70 independently sampled phylogenetic comparisons and McNemar method are credited, not claimed as reproduced here.
+**Important interpretation boundaries.** The annotation `Sa3=1` occurs in 109/704 LA isolates, while the paper reports 68/704 carrying a φSa3 prophage. These measures should not be treated as identical until the underlying definition is established. Five `mecA` calls differ between Supplementary Files 3 and 7; the figure uses the declared File 3 source. The pooled Fisher p-values are **not phylogeny-adjusted** and do not independently establish host adaptation. The original publication's 70 independently sampled phylogenetic comparisons and McNemar method are credited, not claimed as reproduced here.
 
-This repository contains **source-derived summary results**, not the original proprietary dataset or any unperformed experimental work. The original supplementary files remain available from the cited publisher. The notebook regenerates the full accession manifest and all derived exports when run.
+This repository contains **source-derived summary results**. The publicly released original supplementary workbooks are linked in the source manifest rather than duplicated in this repository. The notebook retrieves those workbooks and generates the complete isolate-accession manifest and remaining derived exports when run.
