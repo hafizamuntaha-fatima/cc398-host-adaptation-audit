@@ -1,20 +1,20 @@
 feature,clade,earlier_present,earlier_n,historical_present,historical_n,match,earlier_pct,historical_pct
-Tn916,LA,697,702,697,702,True,,
-Tn916,HA,0,476,0,476,True,,
-SCCmec,LA,608,702,608,702,True,,
-SCCmec,HA,81,476,81,476,True,,
-Sa3 (S3 annotation),LA,109,702,109,702,True,,
-Sa3 (S3 annotation),HA,446,476,446,476,True,,
+Tn916,LA,697.0,702.0,697.0,702.0,True,,
+Tn916,HA,0.0,476.0,0.0,476.0,True,,
+SCCmec,LA,608.0,702.0,608.0,702.0,True,,
+SCCmec,HA,81.0,476.0,81.0,476.0,True,,
+Sa3 (S3 annotation),LA,109.0,702.0,109.0,702.0,True,,
+Sa3 (S3 annotation),HA,446.0,476.0,446.0,476.0,True,,
 tetM,LA,,,,,True,99.3,99.3
-tetM,HA,,,,,True,0,0
+tetM,HA,,,,,True,0.0,0.0
 tetK,LA,,,,,True,55.8,55.8
-tetK,HA,,,,,True,16,16
+tetK,HA,,,,,True,16.0,16.0
 mecA,LA,,,,,True,89.5,89.5
 mecA,HA,,,,,True,17.6,17.6
 blaZ,LA,,,,,True,96.7,96.7
 blaZ,HA,,,,,True,88.7,88.7
 dfrG,LA,,,,,True,41.2,41.2
-dfrG,HA,,,,,True,9,9
+dfrG,HA,,,,,True,9.0,9.0
 ermB,LA,,,,,True,5.8,5.8
 ermB,HA,,,,,True,8.6,8.6
 aadD,LA,,,,,True,17.4,17.4
