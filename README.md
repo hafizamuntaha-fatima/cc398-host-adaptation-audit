@@ -16,9 +16,9 @@ The notebook retrieves three official supplementary workbooks, performs isolate-
 
 ## Figures
 
-![Mobile genetic element prevalence by CC398 evolutionary clade](figures/mobile_elements.svg)
+![Mobile genetic element prevalence by CC398 evolutionary clade](figures/figure_02_mobile_elements.png)
 
-![Selected gene carriage by CC398 evolutionary clade](figures/gene_prevalence.svg)
+![Selected gene carriage by CC398 evolutionary clade](figures/figure_03_genes.png)
 
 The figures use consistent dark-blue livestock-associated (LA) and orange human-associated (HA) colours. Percentages are calculated from the reconciled 1,180-isolate annotation cohort. Raw numerator and denominator values appear in [mobile-element](results/mge_prevalence.csv) and [gene](results/gene_prevalence.csv) summaries.
 
@@ -26,7 +26,9 @@ The figures use consistent dark-blue livestock-associated (LA) and orange human-
 
 | Material | Description |
 |---|---|
-| [Notebook](notebooks/CC398_Host_Associated_Genomic_Variation_Source_Audited.ipynb) | Complete Google Colab analysis |
+| [Source notebook](notebooks/CC398_Host_Associated_Genomic_Variation_Source_Audited.ipynb) | Editable Google Colab analysis |
+| [Executed notebook](notebooks/CC398_Executed.ipynb) | Full notebook rerun from the original source workbooks in GitHub Actions |
+| [Isolate accession manifest](results/isolate_accession_manifest.csv) | All 1,180 isolates with individual available accessions and missing fields |
 | [Methods](docs/METHODS.md) | Detailed methods and interpretation boundaries |
 | [Source manifest](results/input_manifest.csv) | Official source URLs, hashes and source sizes |
 | [Cohort audit](results/cohort_audit.csv) | Three source tables, 1,180 IDs successfully matched |
@@ -45,4 +47,4 @@ The figures use consistent dark-blue livestock-associated (LA) and orange human-
 
 **Important interpretation boundaries.** The annotation `Sa3=1` occurs in 109/704 LA isolates, while the paper reports 68/704 carrying a φSa3 prophage. These measures should not be treated as identical until the underlying definition is established. Five `mecA` calls differ between Supplementary Files 3 and 7; the figure uses the declared File 3 source. The pooled Fisher p-values are **not phylogeny-adjusted** and do not independently establish host adaptation. The original publication's 70 independently sampled phylogenetic comparisons and McNemar method are credited, not claimed as reproduced here.
 
-This repository contains **source-derived summary results**. The publicly released original supplementary workbooks are linked in the source manifest rather than duplicated in this repository. The notebook retrieves those workbooks and generates the complete isolate-accession manifest and remaining derived exports when run.
+This repository contains **source-derived summary results**. The publicly released original supplementary workbooks are linked in the source manifest rather than duplicated in this repository. The [GitHub Actions reproducibility workflow](.github/workflows/reproduce-cc398.yml) has executed the notebook against the publisher workbooks and verified the source hashes and output invariants. The resulting tables, charts, executed notebook and complete accession manifest are committed in this repository.
