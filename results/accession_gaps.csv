@@ -1,0 +1,7 @@
+isolate_id,country,host,sampling_year,accession,reference,bioproject,included_in_join
+FS83_zj,China,Human,2015-2016,,"Zou et al., 2021",PRJNA660925,True
+0213-M-4A,China,Pig,2018,,"Zou et al., 2021",PRJNA660925,True
+0316-E-1A,China,Pig,2018,,"Zou et al., 2021",PRJNA660925,True
+0316-E-1B,China,Pig,2018,,"Zou et al., 2021",PRJNA660925,True
+0316-P-19B,China,Pig,2018,,"Zou et al., 2021",PRJNA660925,True
+0316-P-25B,China,Pig,2018,,"Zou et al., 2021",PRJNA660925,True
